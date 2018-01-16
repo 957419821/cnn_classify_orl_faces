@@ -4,7 +4,7 @@
 dataSetTools.tools包含的函数，使用时仅需要调用getData即可，它返回的值经过了平移和加噪处理：
 * getLabels(filedir)                    被getData、getFeatures、getSize三个函数调用
 * getSize(filedir)                      被getFeatures调用
-* translation(image, vector)            augment调用
+* translation(image, vector)            被augment调用
 * addNoises(features)                   同上
 * augment(features, translationTimes=9) 被getData调用
 * getFeatures(filedir)                  同上
