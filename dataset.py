@@ -11,7 +11,7 @@ def getCSVdata(csvfile):
     reader = csv.reader(open(csvfile, encoding='utf-8'))
     data = []
     for r in reader:
-        for i in range(len(r)-1):
+        for i in range(len(r)-1): # 最后一行是空格
             r[i] = int(float(r[i]))
         label = []
         for i in range(1, len(r[-1])-1):
