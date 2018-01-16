@@ -10,7 +10,7 @@ dataSetTools.tools包含的函数，使用时仅需要调用getData即可，它�
 * getFeatures(filedir) 同上
 * getData(filedir) 被文件夹外的dataset.py模块调用
 
-network.py中是简单的CNN，它将调用dataset.py模块，并使用其类得到数据。
+network.py中是简单的CNN，它将调用dataset.py模块，并使用其类得到数据</br>
 dataset.py模块中包含：
 * 函数getCSVdata 用于从csv文件中得到数据，它被类DataSet调用
 * 类DataSet 存储数据的信息，被network.py使用
