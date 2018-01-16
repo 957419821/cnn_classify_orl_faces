@@ -6,7 +6,7 @@ import csv
 batchStart = 0
 batchEnd = 10
 datas = tools.getData('orl_faces/', batchStart, batchEnd)
-out = open("datas1.csv", 'w', newline='')
+out = open("datas.csv", 'w', newline='')
 writer = csv.writer(out, dialect='excel')
 for r in datas:
     writer.writerow(r)
