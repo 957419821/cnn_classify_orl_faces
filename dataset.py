@@ -1,8 +1,4 @@
-from dataSetTools.tools import *
-import numpy as np
-import random
 import csv
-np.lookfor('matlib')
 
 def getCSVdata(csvfile):
     print("--------------------")
@@ -27,7 +23,7 @@ class DataSet():
     def __init__(self):
         self.height = 112
         self.width = 92
-        self.csvfile = 'datas1.csv'
+        self.csvfile = 'datas.csv'
         self.datas = getCSVdata(self.csvfile)
     def nextBatch(self):
         x = []; y = []
